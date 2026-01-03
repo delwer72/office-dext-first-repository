@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gread-area</title>
+    <style>
+        .container>*{
+            background-color: bisque;
+            border: 1px solid crimson;
+            padding: 30px;
+
+            }
+            header{
+                grid-area: header;
+            }
+            nav{
+                grid-area: navbar
+            }
+            main{
+                grid-area: main
+            }
+            #sidebar-1{
+                grid-area: sidebar-1
+            }
+            #sidebar-2{
+                grid-area: sidebar-2
+            }
+            footer{
+                grid-area: footer
+            }
+            .container{
+                display: grid;
+                gap: 20px;
+                grid-template-areas: 
+                "header header header header"
+                "navbar main main sidebar-1"
+                " navbar main main sidebar-2"
+                "footer footer footer footer";
+            }
+
+    </style>
+
+</head>
+<body class="container">
+    <header>header</header>
+   <nav>navbar</nav>
+   <main>main-area</main>
+   <aside id="sidebar-1">sidebar-1</aside>
+  <aside id="sidebar-2">sidebar-2
+
+  </aside>
+   <footer>footer</footer>
+    
+</body>
+</html>

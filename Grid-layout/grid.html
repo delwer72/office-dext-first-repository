@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.conta, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px auto 200px;
+            gap: 20px;
+            grid-template-rows: repeat(3,200px) ;
+        }
+        .box
+            {background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;}
+            .item-1{
+              grid-column: span 4;
+            } 
+            .item-2{
+                /* grid-row: span 2; */
+                grid-row: 2 / 4;
+            }
+            .item-3{
+    grid-column: 2 / -1;  /* sidebar বাদ দিয়ে ডান দিকের সব column */
+   grid-row: 2 / -1;    /* item-2 যেই 2টা row নিচ্ছে, সেই height জুড়ে */
+}
+            .item-4{
+    grid-column:  1/-1;
+    padding: 100px;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item-1">item-1</div>
+        <div class="box item-2">item-2</div>
+        <div class="box item-3">item-3</div>
+        <div class="box item-4">item-4</div>
+    </div>
+    
+</body>
+</html>
