@@ -1,0 +1,99 @@
+*{margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.section-1{
+    background-color: #FFF8F3;
+    width: 90%;
+    background-color: #FFF8F3;
+    background: url(images/developer.png),url(images/header_bg.png),#FFF8F3;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+
+    
+}
+
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+#banner{
+/* border: 1px solid red; */
+margin: 53px 38px 0px 230px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#banner .banner-content h2{
+    font-size: 45px;
+    font-weight: 600px;
+    color: #474747;
+    margin: 5px;
+
+}
+#banner .banner-content h1{
+     font-size: 65px;
+    font-weight: 800;
+    color: #181818;
+    margin: 20px 0px 20px 10px;
+    }
+#banner .banner-content p{
+    font-size: 18;
+    color: #757575;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+.banner-content{
+    text-align: left;
+}
+#banner .banner-content .btn-section{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-section .btn{
+    background-color: #FD6E0A;
+    padding: 15px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.btn-section .btn2{
+    background-color: #ece9e6;
+     padding: 15px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.banner-image img{
+    max-width: 584px;
+    vertical-align: middle;
+}
+ section{
+    max-width:1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   padding-top: 50px;
+   gap: 25px;
+   
+}
+.card {
+    max-width: 267px;
+     box-shadow: 0 6px 50px 0 #000000;
+}
+.card .main-card img{
+    width: 44px;
+    margin-bottom: 30px;
+}
+.card .main-card h2{
+    margin-bottom: 20px;
+}
+.card .main-card p{
+    color: #757575;
+    font-size: 16;
+    line: height 28px;
+}
